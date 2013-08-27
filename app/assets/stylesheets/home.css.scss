@@ -12,7 +12,14 @@
   font-style: normal;
 }
 
-
+body {
+  ::selection {
+    background: #faa24a;
+  }
+  ::-moz-selection {
+    background: #faa24a;
+  }
+}
 h1 {
   font-family: 'Orator Std';
 }
