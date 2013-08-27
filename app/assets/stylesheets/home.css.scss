@@ -24,17 +24,46 @@ h1 {
   font-family: 'Orator Std';
 }
 
+
+//left column
+.emph {
+  width: 33%;
+}
+
+
+//center column
 .logo {
-  width: 100%;
+  width: 33%;
   text-align: center;
 }
+
 .logo-img {
   height: 300px;
 }
+
 .logo-title {
   font-size: 3em;
   font-weight: lighter;
   color: #282828;
   margin: 0;
   padding: 0;
+}
+
+.cmd {
+  margin: 0;
+  padding: 0;
+  
+}
+
+.shell {
+  
+}
+
+.shell-entry {
+  
+}
+
+//right column
+.details {
+  width: 33%;
 }
