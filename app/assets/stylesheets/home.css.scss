@@ -3,11 +3,11 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 @font-face {
   font-family: 'Orator Std';
-  src:url('OratorStd.eot');
-  src:url('OratorStd.eot?#iefix') format('embedded-opentype'),
-    url('OratorStd.svg#OratorStd') format('svg'),
-    url('OratorStd.woff') format('woff'),
-    url('OratorStd.ttf') format('truetype');
+  src:font-url('OratorStd.eot');
+  src:font-url('OratorStd.eot?#iefix') format('embedded-opentype'),
+    font-url('OratorStd.svg#OratorStd') format('svg'),
+    font-url('OratorStd.woff') format('woff'),
+    font-url('OratorStd.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
