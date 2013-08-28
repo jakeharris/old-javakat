@@ -25,20 +25,23 @@ body {
 }
 
 //TODO: Create column class
-
-//left column
-.emph {
+.col {
+  float: left;
   width: 33%;
   height: 100%;
   min-height: 100px;
-  text-align: center;
-  display: inline;
+  display:inline;
+}
+
+
+//left column
+.emph {
+
 }
 
 
 //center column
 .logo {
-  width: 33%;
   text-align: center;
 }
 
