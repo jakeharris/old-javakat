@@ -18,6 +18,13 @@
 ::-moz-selection {
   background: #fddab7;
 }
+
+@media screen and (min-width: 900px){
+  .content-body {
+    margin-left: 37%;
+  }
+}
+
 body {
   font-family: 'Droid Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
@@ -135,8 +142,7 @@ body {
 .content-body {
   text-align: left;
   line-height: 25px;
-  position: relative;
-  left: 25%;
+  margin-left: 25%;
   max-width: 500px;
 }
 
