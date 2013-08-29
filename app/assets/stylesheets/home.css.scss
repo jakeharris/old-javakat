@@ -135,7 +135,8 @@ body {
 .content-body {
   text-align: left;
   line-height: 25px;
-  margin-left: 15em;
+  position: relative;
+  left: 25%;
   max-width: 500px;
 }
 
