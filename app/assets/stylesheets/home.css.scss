@@ -13,6 +13,7 @@
 }
 
 body {
+  font-family: 'Droid Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   ::selection {
     background: #faa24a;
   }
@@ -22,14 +23,16 @@ body {
 }
 .title {
   font-family: 'Orator Std', sans-serif;
+  font-weight: lighter;
 }
 
 .col {
   float: left;
-  width: 33%;
   height: 100%;
   min-height: 100px;
   display:inline;
+  padding: 0;
+  margin: 0;
 }
 
 
@@ -42,6 +45,7 @@ body {
 //center column
 .logo {
   text-align: center;
+  width: 100%;
 }
 
 .logo-img {
@@ -56,32 +60,67 @@ body {
   padding: 0;
 }
 
-.cmd {
-  margin: 0;
-  padding: 0;
+.nav {
+  clear:both;
+  text-align: center;
+}
+.boxkat-accordion {
   
+}
+
+.molecule {
+
+}
+
+.molecule-chk {
   display: none;
 }
 
-.cmd-prompt {
-  display: none;
-  
-  border: none;
-  border-bottom: 1px solid #282828;
+.molecule-toggle {
+  background: white;
+  color: #282828;
+  border-top: 3px solid #282828;
 }
 
-.shell {
+.toggle-header {
+  font-size: 2.5em;
+}
+
+.molecule-content {
+  background: #282828;
+  color: white;
+
+  max-height: 0;
+  padding: 3em;
+  position:relative;
+  top:3em;
+  
+  -webkit-transition: max-height 0.3s ease-in-out;
+     -moz-transition: max-height 0.3s ease-in-out;
+      -ms-transition: max-height 0.3s ease-in-out;
+       -o-transition: max-height 0.3s ease-in-out;
+          transition: max-height 0.3s ease-in-out;
+}
+
+.content-header {
   
 }
 
-.shell-entry {
-  padding: 0;
-  margin: 0;
-  
-  font-family: 'Droid Serif', serif;
+input[type="checkbox"][value="on"].molecule-chk ~ .molecule-content,
+    input[type="checkbox"].molecule-chk:checked ~ .molecule-content,
+                          .molecule-chk:checked ~ .molecule-content {
+  max-height: 1000px;
 }
+
+.atom {
+
+}
+
+
 
 //right column
 .details {
   width: 33%;
 }
+
+
