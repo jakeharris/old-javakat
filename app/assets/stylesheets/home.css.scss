@@ -63,6 +63,9 @@ body {
 .nav {
   clear:both;
   text-align: center;
+  border-top: 3px solid #282828;
+  position: relative;
+  top: 0.75em;
 }
 .boxkat-accordion {
   
@@ -79,20 +82,34 @@ body {
 .molecule-toggle {
   background: white;
   color: #282828;
-  border-top: 3px solid #282828;
+  width: 25%;
+  cursor: pointer;
+}
+.molecule-toggle:hover {
+  background: #ddd;
+}
+input[type="checkbox"][checked="checked"].molecule-chk + .molecule-toggle,
+input[type="checkbox"].molecule-chk:checked + .molecule-toggle {
+  background: #ddd;
 }
 
 .toggle-header {
   font-size: 2.5em;
+  padding: 0;
+  margin: 0;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
 }
 
 .molecule-content {
-  background: #282828;
-  color: white;
-
+  color: #282828;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  margin-left: 20%;
+  width: 60%;
   max-height: 0;
-  padding: 3em;
-  position:relative;
+  overflow-y:hidden;
   top:3em;
   
   -webkit-transition: max-height 0.3s ease-in-out;
@@ -103,7 +120,13 @@ body {
 }
 
 .content-header {
-  
+  font-size: 2.5em;
+  font-weight: normal;
+}
+
+.content-body {
+  text-align: left;
+  line-height: 25px;
 }
 
 input[type="checkbox"][value="on"].molecule-chk ~ .molecule-content,
