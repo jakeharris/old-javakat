@@ -19,12 +19,6 @@
   background: #fddab7;
 }
 
-@media screen and (min-width: 900px){
-  .content-body {
-    margin-left: 37%;
-  }
-}
-
 body {
   font-family: 'Droid Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
@@ -164,4 +158,12 @@ input[type="checkbox"][value="on"].molecule-chk ~ .molecule-content,
   width: 33%;
 }
 
+
+
+
+@media screen and (min-width: 900px){
+  .content-body {
+    margin-left: 37%;
+  }
+}
 
