@@ -37,7 +37,13 @@ GEM
     coffee-script-source (1.6.3)
     erubis (2.7.0)
     execjs (2.0.0)
+    figaro (0.7.0)
+      bundler (~> 1.0)
+      rails (>= 3, < 5)
     hike (1.2.3)
+    httparty (0.11.0)
+      multi_json (~> 1.0)
+      multi_xml (>= 0.5.2)
     i18n (0.6.5)
     jbuilder (1.5.1)
       activesupport (>= 3.0.0)
@@ -52,6 +58,7 @@ GEM
     mime-types (1.24)
     minitest (4.7.5)
     multi_json (1.7.9)
+    multi_xml (0.5.5)
     pg (0.16.0)
     polyglot (0.3.3)
     rack (1.5.2)
@@ -114,8 +121,11 @@ PLATFORMS
 
 DEPENDENCIES
   coffee-rails (~> 4.0.0)
+  figaro
+  httparty
   jbuilder (~> 1.2)
   jquery-rails
+  json
   pg
   rails (= 4.0.0)
   rails_12factor (~> 0.0.2)

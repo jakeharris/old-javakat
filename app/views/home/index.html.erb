@@ -49,11 +49,32 @@
         <h2 class="toggle-header title">MEMBERS</h2>
       </label>
       <section class="molecule-content">
-        <p class="content-header">Jake</p>
-        <p class="content-body">
-          To be filled in when I can make claims without sounding like a 
-          pretentious braggart.
-        </p>
+        <div class="atom person">
+          <p class="person-name content-header">Jake</p>
+          <div class="content-body">
+            <section class="steam">
+              <div class="profile">
+                <div class="profile-img" style="background:url(<%= @profile["response"]["players"][0]["avatarmedium"] %>) no-repeat;"></div>
+                <h2 class="steam-name"><%= @profile["response"]["players"][0]["personaname"] %></h2>
+              </div>
+              <div class="games">
+                <% @recentlyplayed["response"]["games"].each do |game| %>
+                <div class="game" id="game-<%= game["appid"] %>">
+                  <div class="game-img" style="background:url(http://media.steampowered.com/steamcommunity/public/images/apps/<%= game["appid"] %>/<%= game["img_icon_url"] %>.jpg) no-repeat;" ></div>
+                  <div class="game-text">
+                    <span class="game-name"> 
+                      <%= game["name"] %> 
+                    </span> 
+                    <span class="game-hours"> 
+                      <%= (game["playtime_2weeks"]/60).floor %> hours
+                    </span>
+                  </div>
+                </div>
+                <% end %>
+              </div>
+            </section>
+          </div>
+        </div>
       </section>
     </div>
     <div class="molecule">

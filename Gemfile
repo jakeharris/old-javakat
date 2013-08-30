@@ -4,6 +4,15 @@ source 'https://rubygems.org'
 ruby '2.0.0'
 gem 'rails', '4.0.0'
 
+# Use figaro for hiding API keys, etc.
+gem "figaro"
+
+# Use JSON for parsing JSON into Ruby hashes.
+gem "json"
+
+# Use httparty for easy API access.
+gem 'httparty'
+
 # Use postgresql as the database for Active Record
 gem 'pg'
 
