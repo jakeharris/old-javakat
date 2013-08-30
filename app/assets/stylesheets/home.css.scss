@@ -21,6 +21,7 @@
 
 body {
   font-family: 'Droid Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #282828;
 }
 .body-link{
   text-decoration: none;
@@ -187,7 +188,9 @@ input[type="checkbox"][value="on"].molecule-chk ~ .molecule-content,
           border-radius: 16px;
 }
 
-
+.game-name {
+  font-weight: bold;
+}
 
 
 
