@@ -7,7 +7,6 @@ class HomeController < ApplicationController
   end
 end
 
-
 class SteamRequest
   include HTTParty
 
@@ -29,6 +28,19 @@ class SteamRequest
     url += Figaro.env.STEAM_ID
     url += "&format=" + format
 
+    json = HTTParty.get(url)
+  end
+end
+
+class GithubRequest 
+  include HTTParty
+
+  def getPublicEvents(user)
+    base_uri = "api.github.com"
+    
+    url = "https://" + base_uri + "/"
+    url += "users/" + user + "/events/public"
+    
     json = HTTParty.get(url)
   end
 end

@@ -161,14 +161,22 @@ input[type="checkbox"][value="on"].molecule-chk ~ .molecule-content,
 
 
 .steam {
-
+  width: 30%;
+  margin-left: 3%;
 }
 
 .profile {
-
 }
 
-.profile-img {
+.profile-persona {
+  display: inline-block;
+  position:relative;
+  top: -1em;
+  margin-left: 0.5em;
+}
+
+.profile-avatar {
+  display: inline-block;
   width: 64px;
   height: 64px;
   -webkit-border-radius: 32px;
@@ -177,10 +185,14 @@ input[type="checkbox"][value="on"].molecule-chk ~ .molecule-content,
 }
 
 .game {
-
+  text-align: left;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  vertical-align: top;
 }
 
 .game-img {
+  display: inline-block;
   width: 32px;
   height: 32px;
   -webkit-border-radius: 16px;
@@ -188,11 +200,23 @@ input[type="checkbox"][value="on"].molecule-chk ~ .molecule-content,
           border-radius: 16px;
 }
 
-.game-name {
-  font-weight: bold;
+.game-text {
+  display: inline;
+  margin-left: 0.5em;
+  line-height: 20px;
 }
 
+.game-name {
+  display: inline;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
 
+.game-hours {
+  margin: 0;
+  padding: 0;
+}
 
 
 
