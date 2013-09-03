@@ -54,11 +54,11 @@
           <div class="content-body--steam">
             <section class="steam">
               <div class="profile">
-                <div class="profile-avatar" style="background:url(<%= @profile["response"]["players"][0]["avatarmedium"] %>) no-repeat;"></div>
-                <h2 class="profile-persona"><%= @profile["response"]["players"][0]["personaname"] %></h2>
+                <div class="profile-avatar" style="background:url(<%= @steam.profile["avatarmedium"] %>) no-repeat;"></div>
+                <a href="<%= @steam.profile["profileurl"] %>" class="profile-persona"><%= @steam.profile["personaname"] %></a>
               </div>
               <div class="games">
-                <% @recentlyplayed["response"]["games"][0..2].each do |game| %>
+                <% @steam.recentlyplayed[0..2].each do |game| %>
                 <div class="game" id="game-<%= game["appid"] %>">
                   <div class="game-img" style="background:url(http://media.steampowered.com/steamcommunity/public/images/apps/<%= game["appid"] %>/<%= game["img_icon_url"] %>.jpg) no-repeat;" ></div>
                   <div class="game-text">
@@ -74,7 +74,7 @@
               </div>
             </section>
             <section class="github">
-
+              <% @github
             </section>
           </div>
         </div>

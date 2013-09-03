@@ -1,10 +1,21 @@
 class HomeController < ApplicationController
 
   def index
-    s = SteamRequest.new
-    @profile = JSON.parse(s.get('ISteamUser', 'GetPlayerSummaries', 'v0002', true).body)
-    @recentlyplayed = JSON.parse(s.get('IPlayerService', 'GetRecentlyPlayedGames', 'v0001', false).body)
+    @steam = SteamUser.new
   end
+end
+
+class SteamUser
+  
+  attr_reader :profile
+  attr_reader :recentlyplayed
+
+  def initialize
+    s = SteamRequest.new
+    @profile = JSON.parse(s.get('ISteamUser', 'GetPlayerSummaries', 'v0002', true).body)["response"]["players"][0]
+    @recentlyplayed = JSON.parse(s.get('IPlayerService', 'GetRecentlyPlayedGames', 'v0001', false).body)["response"]["games"]
+  end
+
 end
 
 class SteamRequest
@@ -29,6 +40,15 @@ class SteamRequest
     url += "&format=" + format
 
     json = HTTParty.get(url)
+  end
+end
+
+class GithubUser
+
+  
+
+  def initialize
+    
   end
 end
 
