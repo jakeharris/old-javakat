@@ -2,22 +2,6 @@
 <section class="col logo center">
   <%= image_tag("logo.png", class: "logo-img") %>
   <h1 class="title logo-title">JAVAKAT</h1>
-  
-<!--  <div class="cmd">
-    <input type="text" class="cmd-prompt"></input>
-    <div class="shell">
-      <p class="shell-entry">run app JAVAKAT DESIGN</p>
-      <p class="shell-entry">...</p>
-      <p class="shell-entry">started!</p>
-      <p class="shell-entry">Enter a command. Common ones include: </p>
-      <p class="shell-entry">  - about : describes Javakat. </p>
-      <p class="shell-entry">  - members : lists Javakat members. adding the -s option (i.e. members -s) shows their steam data. </p>
-      <p class="shell-entry">  - portfolio : lists projects we've done. </p>
-      <p class="shell-entry">  - help : displays this command list again. </p>
-      <p class="shell-entry">  and there may be others... </p>
-    </div>
-  </div>-->
-  
 </section>
 
 <section class="nav">
@@ -46,7 +30,7 @@
     <div class="molecule">
       <input type="checkbox" class="molecule-chk" id="members-toggle"></input>
       <label for="members-toggle" class="molecule-toggle">
-        <h2 class="toggle-header title">MEMBERS</h2>
+        <h2 id="members" class="toggle-header title title-link">MEMBERS</h2>
       </label>
       <section class="molecule-content">
         <div class="atom person">
@@ -74,7 +58,7 @@
               </div>
             </section>
             <section class="github">
-              <% @github
+              <%= @github %>
             </section>
           </div>
         </div>
