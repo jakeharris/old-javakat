@@ -1,0 +1,9 @@
+{
+  "name": "javakat",
+  "description": "Javakat site. Currently Milieu's (Jake's) portfolio.",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "express": "3.5.0"
+  }
+}	
