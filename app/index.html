@@ -2,20 +2,20 @@
 <html>
 <head>
   <title>Javakat</title>
-  <link href="assets/stylesheets/home.css" type="text/css" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /></meta>
+  <link rel="stylesheet" href="stylesheets/home.css">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 </head>
 <body>
 
 <section class="col logo center">
-  <img class="logo-img" src="assets/images/logo.png" />
+  <img class="logo-img" src="images/logo.png" alt="Logo">
   <h1 class="title logo-title">JAVAKAT</h1>
 </section>
 
 <section class="nav">
   <section class="boxkat-accordion">
     <div class="molecule">
-      <input type="checkbox" class="molecule-chk" id="about-toggle"></input>
+      <input type="checkbox" class="molecule-chk" id="about-toggle">
       <label for="about-toggle" class="molecule-toggle">
         <h2 class="toggle-header title">ABOUT</h2>
       </label>
@@ -36,7 +36,7 @@
       </section>
     </div>
     <div class="molecule">
-      <input type="checkbox" class="molecule-chk" id="members-toggle"></input>
+      <input type="checkbox" class="molecule-chk" id="members-toggle">
       <label for="members-toggle" class="molecule-toggle">
         <h2 id="members" class="toggle-header title title-link">MEMBERS</h2>
       </label>
@@ -46,36 +46,18 @@
           <div class="content-body--steam">
             <section class="steam">
               <div class="profile">
-                <div class="profile-avatar" style="background:url(<%= @steam.profile["avatarmedium"] %>) no-repeat;"></div>
-                <a href="<%= @steam.profile["profileurl"] %>" class="profile-persona"><%= @steam.profile["personaname"] %></a>
               </div>
               <div class="games">
-                <!--
-                <% @steam.recentlyplayed[0..2].each do |game| %>
-                <div class="game" id="game-<%= game["appid"] %>">
-                  <div class="game-img" style="background:url(http://media.steampowered.com/steamcommunity/public/images/apps/<%= game["appid"] %>/<%= game["img_icon_url"] %>.jpg) no-repeat;" ></div>
-                  <div class="game-text">
-                    <p class="game-name"> 
-                      <%= game["name"] %> 
-                    </p> 
-                    <p class="game-hours"> 
-                      <%= (game["playtime_2weeks"] < 60) ? "#{game["playtime_2weeks"]} minutes" : "#{(game["playtime_2weeks"]/60).floor} hours" %>
-                    </p>
-                  </div>
-                </div>
-                <% end %> 
-                -->
               </div>
             </section>
             <section class="github">
-              <!--<%= @github %>-->
             </section>
           </div>
         </div>
       </section>
     </div>
     <div class="molecule">
-      <input type="checkbox" class="molecule-chk" id="portfolio-toggle"></input>
+      <input type="checkbox" class="molecule-chk" id="portfolio-toggle">
       <label for="portfolio-toggle" class="molecule-toggle">
         <h2 class="toggle-header title">PORTFOLIO</h2>
       </label>
@@ -92,9 +74,9 @@
       </section>
     </div>
     <div class="molecule">
-      <input type="checkbox" class="molecule-chk" id="contact-toggle"></input>
+      <input type="checkbox" class="molecule-chk" id="contact-toggle">
       <label for="contact-toggle" class="molecule-toggle">
-        <h2 class="toggle-header title">CONTACT</h2>
+        <p class="toggle-header title">CONTACT</p>
       </label>
       <section class="molecule-content">
         <p class="content-header">Intrigued?</p>
@@ -102,6 +84,7 @@
           Shoot us an email at <a class="body-link" href="mailto:javakatdesign@gmail.com">javakatdesign@gmail.com</a>.
         </p>
       </section>
+    </div>
   </section>
 </section>
 

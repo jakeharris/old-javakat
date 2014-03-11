@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'Orator Std';
-  src:font-url('OratorStd.eot');
-  src:font-url('OratorStd.eot?#iefix') format('embedded-opentype'),
-    font-url('OratorStd.svg#OratorStd') format('svg'),
-    font-url('OratorStd.woff') format('woff'),
-    font-url('OratorStd.ttf') format('truetype');
+  src:font-url('../fonts/OratorStd.eot');
+  src:font-url('../fonts/OratorStd.eot?#iefix') format('embedded-opentype'),
+    font-url('..fonts/OratorStd.svg#OratorStd') format('svg'),
+    font-url('..fonts/OratorStd.woff') format('woff'),
+    font-url('..fonts/OratorStd.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -42,17 +42,9 @@ body {
   margin: 0;
 }
 
-
-//left column
-.emph {
-
-}
-
-
-//center column
 .logo {
-  text-align: center;
   width: 100%;
+  text-align: center;
 }
 
 .logo-img {
