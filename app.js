@@ -1,16 +1,14 @@
-var express = require('express')
-  , app = express()
-  , port = process.env.PORT || 8080
+var express = require('express'),
+    app = express()
 
-app.set('views', __dirname + '/app')
-app.set('view engine', 'html')
-app.engine('html', require('ejs').renderFile)
-app.use(express.static('app/assets/'))
-
-app.get('/', function(req, res) {
-  res.render('index')
+app.get('/', function (req, res) {
+  res.render('index.html')
 })
 
-app.listen(port, function () {
-  console.log('Listening on ' + port)
+var server = app.listen(3000, function () {
+  var host = server.address().address,
+      port = server.address().port
+  
+  console.log('Listening at http://%s:%s', host, port)
+  
 })

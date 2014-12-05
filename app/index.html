@@ -1,93 +1,25 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Javakat</title>
-  <link rel="stylesheet" href="stylesheets/home.css">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-</head>
-<body>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>App</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<section class="col logo center">
-  <img class="logo-img" src="images/logo.png" alt="Logo">
-  <h1 class="title logo-title">JAVAKAT</h1>
-</section>
+    {{content-for 'head'}}
 
-<section class="nav">
-  <section class="boxkat-accordion">
-    <div class="molecule">
-      <input type="checkbox" class="molecule-chk" id="about-toggle">
-      <label for="about-toggle" class="molecule-toggle">
-        <h2 class="toggle-header title">ABOUT</h2>
-      </label>
-      <section class="molecule-content">
-        <p class="content-header">We're ideas.</p>
-        <p class="content-body">
-          But we're so much more. We're bodies with keyboards, 
-          we're fixers and doers, and above all else, we're creators.
-        </p>
-        <p class="content-header">Interaction and individualism.</p>
-        <p class="content-body">
-          At Javakat Design, we make things that people touch and
-          that touch people &mdash; be it a story, a game, or a web
-          site. It's our passion to bring unique and novel ideas to
-          the table and use them to inspire emotion within our 
-          audience.
-        </p>
-      </section>
-    </div>
-    <div class="molecule">
-      <input type="checkbox" class="molecule-chk" id="members-toggle">
-      <label for="members-toggle" class="molecule-toggle">
-        <h2 id="members" class="toggle-header title title-link">MEMBERS</h2>
-      </label>
-      <section class="molecule-content">
-        <div class="atom person">
-          <p class="person-name content-header">Jake</p>
-          <div class="content-body--steam">
-            <section class="steam">
-              <div class="profile">
-              </div>
-              <div class="games">
-              </div>
-            </section>
-            <section class="github">
-            </section>
-          </div>
-        </div>
-      </section>
-    </div>
-    <div class="molecule">
-      <input type="checkbox" class="molecule-chk" id="portfolio-toggle">
-      <label for="portfolio-toggle" class="molecule-toggle">
-        <h2 class="toggle-header title">PORTFOLIO</h2>
-      </label>
-      <section class="molecule-content">
-        <p class="content-header">Impressions and impact.</p>
-        <p class="content-body">
-          Our designs leave marks on minds. From pet projects
-          like <a class="body-link" href="http://pixilic.com/apps/pilgrim">
-          Pilgrim</a> to functional, fully-featured, client-driven
-          projects like 
-          <a class="body-link" href="https://cws.auburn.edu/notetake">
-          Notetake</a>, our output is loud. 
-        </p>
-      </section>
-    </div>
-    <div class="molecule">
-      <input type="checkbox" class="molecule-chk" id="contact-toggle">
-      <label for="contact-toggle" class="molecule-toggle">
-        <p class="toggle-header title">CONTACT</p>
-      </label>
-      <section class="molecule-content">
-        <p class="content-header">Intrigued?</p>
-        <p class="content-body">
-          Shoot us an email at <a class="body-link" href="mailto:javakatdesign@gmail.com">javakatdesign@gmail.com</a>.
-        </p>
-      </section>
-    </div>
-  </section>
-</section>
+    <link rel="stylesheet" href="assets/vendor.css">
+    <link rel="stylesheet" href="assets/app.css">
 
+    {{content-for 'head-footer'}}
+  </head>
+  <body>
+    {{content-for 'body'}}
 
-</body>
+    <script src="assets/vendor.js"></script>
+    <script src="assets/app.js"></script>
+
+    {{content-for 'body-footer'}}
+  </body>
 </html>

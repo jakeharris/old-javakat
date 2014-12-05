@@ -1,0 +1,41 @@
+html, body {
+  margin: 20px;
+}
+
+@font-face {
+  font-family: 'Orator Std';
+  src:font-url('OratorStd.eot');
+  src:font-url('OratorStd.eot?#iefix') format('embedded-opentype'),
+    font-url('OratorStd.svg#OratorStd') format('svg'),
+    font-url('OratorStd.woff') format('woff'),
+    font-url('OratorStd.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+::selection {
+  background: #fddab7;
+}
+::-moz-selection {
+  background: #fddab7;
+}
+
+body {
+  font-family: 'Droid Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #282828;
+}
+
+.body-link{
+  text-decoration: none;
+  color: #faa24a;
+  font-weight: bold;
+}
+
+.body-link:hover{
+  color: #9a4200;
+}
+
+.title {
+  font-family: 'Orator Std', sans-serif;
+  font-weight: lighter;
+}
